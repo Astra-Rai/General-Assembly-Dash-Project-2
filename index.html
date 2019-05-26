@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>General-Assembly-Dash-Project-2-Build-A-Responsive-Blog-Theme</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<head>
+<!--Meta info goes here--> 
+  <link href="/normalize.css" rel="stylesheet">
+</head>
+<style>
+  
+  header {
+        
+      text-align: center;
+      background: url("http://dash.ga.co/assets/jeff-bg.png");
+      /*coverw will resize background image to conver entire container
+      even if it has to stretch the image or cut a bit off one of the edges
+      */
+      background-size: cover;
+      /*color of h1 element, white*/
+      color: #fff;
+    }
+    a {
+      
+      /*link text color white*/
+      color: #fff;
+      /*remove line from under link*/ 
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      /*imaged centered*/
+      margin: 40px 0px 0px 0px;
+      /*border around image, white*/
+      border: 7px solid white;
+      /*makes border radius more rounded instead of pointed*/
+      border-radius: 20px;
+    }
+    ul {
+      /*padding is space between content and border*/
+      /*set padding for top, bottom, left, and right for ul to 10px*/
+      padding: 10px;
+      /*unordered list background set to black*/
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      /*display inline displays an element as an inline element (like <span>). */
+      display: inline;
+      /*padding: top 0px, right10px, bottom 0px, left 10px*/
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      /*set width and padding so that content doesn't span width of page */      
+      /*max-width means article elements can be smaller than 500px, but not         
+      larger*/
+      max-width: 500px;
+      padding: 20px;
+     /*settig margin:0 auto shifts content for algined left to more centered*/ 
+      margin: 0 auto;
+    }
+    /*make heading font size smaller when browser is smaller*/
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      /*change list items from inline to block when browser is smaller*/        
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    } 
+</style>          
+<body>
+<!--page content goes inbetween body tags-->  
+<!--header, notes introductory content for its nearest ancestor sectioning content or sectioning root element. A header typically contains a group of introductory or navigational aids.-->
+<!--header element doesn't introduce new section, but it is the head of the section-->
+  <header>
+<!--add image within header tag-->    
+<img src="https://dash.generalassemb.ly/projects/assets/jeff.png">
+<!--add ittle of blog--> 
+    <h1>Jeff's Blog</h1>
+<!--Use unordered <ul> list to make navigation bar-->    
+    <ul>
+<!--use three li's, list items, within ul, they will cotain links-->  
+<!--use anchor tags within li tags, hashtag within a href ="#", mean link has no destination-->
+<!--the href attribute specifies the destination address--> 
+<!--The link text is the visible part (Visit our HTML tutorial-->
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Best Poems</a></li>
+      <li><a href="#">Worst Poems</a></li>
+    </ul>
+  </header>
+ <!--wrap article tag around each post, which is in a paragrah tag>
+ <!---the <article> tag specifies independent, self-contained content--> 
+  <article>
+    <h2>VHS umami pop-up trust fund</h2>
+    <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+<!--Creat a link button within each article-->    
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Sartorial synth Echo Park, roof party</h2>
+    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Forage food truck keytar master cleanse</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button>Like</button>
+  </article>
+  <script>
+//check if javascript is working
+//alert("JavaScirpt Works!")
+//use jQuery, a javascript library
+//select button element...
+//call the on () function, which sets up an event listener for button element
+//first parameter of on functionis 'click'
+//the second parameter is the function that is called when button is clicked
+
+    $("button").on("click", function() {
+      //pop up alert with the text "A button was clicked "
+      alert("A button was clicked");
+    });
+  </script>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+</body>
+
+</html>
