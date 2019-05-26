@@ -14,7 +14,7 @@ Created a one-page, responsive site with blog theme.
 
 **Skills Unlocked**
 
--Header
+- Header
 -ul
 -a
 -li
