@@ -15,22 +15,22 @@ Created a one-page, responsive site with blog theme.
 **Skills Unlocked**
 
 - Header
--ul
--a
--li
--display
--margin-
--border radius
--padding 2
--max-width
--article
--margin 0 auto
--script
--on() 
--button
--alert()
--hex color
--media queries
--rgba color
+- ul
+- a
+- li
+- display
+- margin-
+- border radius
+- padding 2
+- max-width
+- article
+- margin 0 auto
+- script
+- on() function 
+- button
+- alert()function
+- hex color
+- media queries
+- rgba color
 
 ----
